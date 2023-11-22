@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Your Company</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .contact-details {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in-up 1s ease-in-out forwards;
+        }
+
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .company-info img,
+        .founder img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in-right 1s ease-in-out forwards;
+        }
+
+        @keyframes fade-in-right {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .founder-info h3,
+        .founder-info p {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in-left 1s ease-in-out forwards;
+        }
+
+        @keyframes fade-in-left {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* /........................................................... */
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .contact-details {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in-up 1s ease-in-out forwards;
+        }
+
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .company-info img,
+        .founder img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in-right 1s ease-in-out forwards;
+        }
+
+        @keyframes fade-in-right {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .founder-info h3,
+        .founder-info p {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in-left 1s ease-in-out forwards;
+        }
+
+        @keyframes fade-in-left {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .company-info p,
+        .founder-info p {
+            color: #666;
+        }
+
+        /* Add a subtle hover effect on founder images */
+        .founder img:hover {
+            filter: brightness(85%);
+            transition: filter 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+        // React component for contact details
+        const ContactDetails = () => {
+            return (
+                <div className="contact-details">
+                    <h2>Contact Information</h2>
+                    <div className="company-info">
+                        <img src="Screenshot (219).png" alt="Company Logo" className="animated" />
+                        <p>SAKSH TRITECH LLP</p>
+                        <p>Email: saksh.tritech@gmail.com</p>
+                        <p>Email: contact@wriderno.com</p>
+                    </div>
+                    <h2>Meet Our Co-Founders</h2>
+                    <div className="founder">
+                        <img src="WhatsApp Image 2023-06-25 at 19.40.17.jpg" alt="Founder 1" className="animated" />
+                        <div className="founder-info">
+                            <h3>Akshat Bhardwaj</h3>
+                            <p>Mobile: 74097 80008</p>
+                            <p>Email: hitleraksh1@gmail.com</p>
+                            <p>LinkedIn: https://www.linkedin.com/in/akshat-bhardwajj</p>
+                        </div>
+                    </div>
+                    <div className="founder">
+                        <img src="logo - Copy.jpg" alt="Founder 2" className="animated" />
+                        <div className="founder-info">
+
+                            <h3>Akhil Srivastava</h3>
+                            <p>Mobile: 85460 83289</p>
+                            <p>Email: akhilsrivastava801@gmail.com</p>
+                            <p>LinkedIn: https://www.linkedin.com/in/akhil-srivastava-83155725a</p>
+                        </div>
+                    </div>
+                    <div className="founder">
+                        <img src="WhatsApp Image 2023-06-25 at 19.36.37.jpg" alt="Founder 1" className="animated" />
+                        <div className="founder-info">
+                            <h3>Sahil Yadav</h3>
+                            <p>Mobile: 91491 37864</p>
+                            <p>Email: sahilyadav9149@gmail.com</p>
+                            <p>LinkedIn: https://www.linkedin.com/in/sahil-yadav-4057b9249</p>
+                        </div>
+                    </div>
+                    {/* Add more founders as needed */}
+                </div>
+            );
+        }
+
+        // Render the ContactDetails component to the root element
+        ReactDOM.render(
+            <ContactDetails />,
+            document.getElementById('root')
+        );
+    </script>
+
+</body>
+
+</html>
