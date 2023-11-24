@@ -234,13 +234,13 @@ padding: 50px;
 margin-bottom: 20px;
 }
 
-.technology-section,
+/* .technology-section,
 .features-section,
 .faq-section {
 opacity: 0;
 transform: translateY(50px);
 transition: opacity 0.8s ease, transform 0.8s ease;
-}
+} */
 
 .technology-section.show,
 .features-section.show,
